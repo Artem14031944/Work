@@ -9,12 +9,12 @@ fetch(myRequest)
     .then((data)=> {
 
         const photo = {
-            1: "/src/images/1.jpg",
-            2: "/src/images/2.jpg",
-            3: "/src/images/3.jpg",
-            4: "/src/images/4.jpg",
-            5: "/src/images/5.jpg",
-            6: "/src/images/6.jpg"
+            1: "/images/1.jpg",
+            2: "/images/2.jpg",
+            3: "/images/3.jpg",
+            4: "/images/4.jpg",
+            5: "/images/5.jpg",
+            6: "/images/6.jpg"
         }
         let headers = document.querySelector('.headers');
 
