@@ -1,10 +1,8 @@
 "use strict"
 
-// let myRequest = new Request('/data.json');
+let myRequest = new Request('/data.json');
 
-let response = await fetch('/data.json');
-
-fetch(response)
+fetch(myRequest)
     .then((resp)=> {
         return resp.json();
     })
