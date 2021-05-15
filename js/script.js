@@ -1,12 +1,17 @@
 "use strict"
 
-let myRequest = new Request('/data.json')
+let myRequest = new Request('/data.json');
 
 fetch(myRequest)
     .then((resp)=> {
+        // console.log(resp)
         return resp.json();
     })
     .then((data)=> {
+
+
+        let headers = document.querySelector('.headers');
+        let blockAuto = document.querySelector('.block_info_auto');
 
         const photo = {
             1: "/images/1.jpg",
@@ -16,8 +21,7 @@ fetch(myRequest)
             5: "/images/5.jpg",
             6: "/images/6.jpg"
         }
-        let headers = document.querySelector('.headers');
-
+    
         headers.innerHTML = `
             <div class="header">
                 <header class="headers">
@@ -38,7 +42,6 @@ fetch(myRequest)
             </div>
         `;
 
-        let blockAuto = document.querySelector('.block_info_auto');
 
         blockAuto.innerHTML = `
             <div class="imgAuto">
@@ -163,6 +166,6 @@ fetch(myRequest)
             </div>
         `;
 
-        console.log(data)
+        console.log(data);
     });  
 
