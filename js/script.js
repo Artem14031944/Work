@@ -1,6 +1,6 @@
 "use strict"
 
-let myRequest = new Request("/data.json")
+let myRequest = new Request('/data.json')
 
 fetch(myRequest)
     .then((resp)=> {
