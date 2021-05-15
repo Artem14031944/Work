@@ -2,7 +2,7 @@
 
 let myRequest = new Request('/data.json');
 
-fetch(myRequest)
+await fetch(myRequest)
     .then((resp)=> {
         return resp.json();
     })
