@@ -1,6 +1,6 @@
 "use strict"
 
-let myRequest = new Request('https://artem14031944.github.io/data.json');
+let myRequest = new Request('/data.json');
 
 fetch(myRequest)
     .then((resp)=> {
